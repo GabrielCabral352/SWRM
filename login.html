@@ -6,8 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - SWRM</title>
     <link rel="shortcut icon" href="./images/icone.png">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/fonts.css">
 </head>
 <body>
-    
+    <header class="login_main_header">
+        <div class="login_main_header_logo">
+           <div>
+                <h1>Star Wars</h1>
+                <h3>Roberto Mange</h3>
+           </div>
+        </div>
+    </header>
+    <main class="login_main_form">
+        <form action="#">
+            <div class="email_info">
+                <label class="email_label" for="email">Email:</label>
+                <input id="email" class="input_sw main_email" type="email">
+            </div>
+            <div class="pass_info">
+                <label class="email_label" for="email">Senha:</label>
+                <input id="email" class="input_sw main_pass" type="password">
+            </div>
+            <button type="submit">
+                <p>Enviar</p>
+            </button>
+            <img class="stormtrooper_img" src="./images/stormtrooper.png" alt="">
+        </form>
+    </main>
 </body>
 </html>

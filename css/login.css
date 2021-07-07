@@ -1,0 +1,115 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color:black;
+}
+.login_main_header{
+    width: 100%;
+    height:20%;
+    background-color:none;
+} 
+.login_main_header > .login_main_header_logo{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+} 
+.login_main_header > .login_main_header_logo > div > h1, h3{
+    font-family: 'sw', Arial;
+    color: white;
+    text-align: center;
+} 
+.login_main_header > .login_main_header_logo > div > h1{
+     font-size: 70px;
+} 
+.login_main_header > .login_main_header_logo > div > h3{
+    margin-top: -20px;
+    font-size: 25px;
+}
+.login_main_form{
+    width: 100%;
+    height: 80vh;
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.login_main_form > form{
+    width:  500px;
+    height: 400px;
+    background-color: black;
+    border: 3px solid white;
+}
+.stormtrooper_img{
+    width: 120px;
+    margin-left: calc(50% - 60px);
+}
+.email_info{
+    display:flex;
+    flex-direction:column;
+    
+}
+.email_label{
+    margin-top: 60px;
+    font-family: 'sw', Arial;
+    color: white;
+    margin-left: 10%;
+}
+.input_sw{
+    width :80%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-bottom: 2px solid yellow;
+    font-size: 25px;
+    font-family:  Arial;
+    margin-left: 10%;
+    outline: 0;
+    padding-left: 15px;
+}
+.pass_info{
+    display:flex;
+    flex-direction:column;
+}
+button{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+button:hover{
+    animation: soft 1s infinite ease-in-out;
+}
+button > img{
+    width: 40px;
+}
+button > p{
+    margin-left: 42%;
+}
+
+@keyframes soft{
+    0%{
+        transform: scale(1.00);
+    }
+    50%{
+        transform: scale(1.03);
+    }
+    100%{
+        transform: scale(1.00);
+    }
+}
