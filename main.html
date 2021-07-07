@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarWars - Roberto Mange</title>
+    <link rel="stylesheet" href="./css/imports.css">
+    <link href="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css" />
+</head>
+<body class="main_all_body" onload="load(document.querySelector('a[view=home]'))">
+
+    <div class="main_top">
+
+        <div class="main_logo">
+            <h1>Star Wars</h1>
+            <h3>Roberto Mange</h3>
+        </div>
+
+        <div class="main_item_menu">
+            
+            <div class="menu_item" onclick="load(this)" view="home"> 
+                <a>HOME</a>
+            </div>
+            <div class="menu_item" onclick="load(this)" view="personagens">
+                <a>PERSONAGENS</a>
+            </div>
+            <div class="menu_item" onclick="load(this)" view="filmes">
+                <a>FILMES</a>
+            </div>
+            <div class="menu_item" onclick="load(this)" view="planetas">
+                <a>PLANETAS</a>
+            </div>
+            <div class="menu_item" onclick="load(this)" view="creditos">
+                <a>CRÉDITOS</a>
+            </div>
+                    
+            
+
+        </div>
+
+        <div class="mobile_main_top">
+            
+            
+            <div class="menu_burguer" onclick="openMenu()">
+                &#9776;
+            </div>
+            <div class="mobile_main_logo">
+                SWRM
+            </div>
+
+            <div class="mobile_menu" id="mobile_menu">
+                <div class="menu_item">
+                    <a onclick="load(this)" view="home">HOME</a>
+                </div>
+                <div class="menu_item">
+                    <a onclick="load(this)" view="personagens">PERSONAGENS</a>
+                </div>
+                <div class="menu_item">
+                    <a onclick="load(this)" view="filmes">FILMES</a>
+                </div>
+                <div class="menu_item">
+                    <a onclick="load(this)" view="planetas">PLANETAS</a>
+                </div>
+                <div class="menu_item">
+                    <a onclick="load(this)" view="creditos">CRÉDITOS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_content">
+        
+    </div>
+
+</body>
+<script src="./js/main.js"></script>
+<script src="./js/loadPage.js"></script>
+<script src="./js/slider1.js"></script>
+<script src="../js/404red.js"></script>
+</html>

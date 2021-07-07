@@ -1,0 +1,174 @@
+.main_all_body{
+
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.main_all_body > .main_top{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main_all_body > .main_top > .main_logo :is(h1, h3){
+    font-family: 'sw', Arial;
+    color: white;
+}
+.main_all_body > .main_top > .main_logo :is(h1){
+    font-size: 40px;
+    margin-bottom: -15px;
+}
+.main_all_body > .main_top > .main_item_menu{
+    width: 100%;
+    height: 50px;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    background-color:black;
+
+}
+.main_all_body > .main_top > .main_item_menu > .menu_item{
+    cursor: pointer;
+    padding-bottom: 15px;
+    width: 150px;
+    text-align: center;
+}
+.main_all_body > .main_top > .main_item_menu > .menu_item > a:hover{
+    padding-bottom: 15px;
+    border-bottom: 2px solid yellow;
+}
+.main_all_body > .main_content{
+    margin-top: 40px;
+    background-color:none;
+    width: 100%;
+}
+.main_all_body > .main_content > .carrossel > .slideshow-container{
+    width: 100%;
+    background-color:black;
+}
+.carrossel_content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.carrossel_content .carrossel_content_info{
+    background-color: rgba(255, 255, 255, 0.637);
+    color: black;
+    width: 200px;
+    height: 250px;
+    border-top: 20px solid rgb(124, 124, 23);
+
+}
+.carrossel_content .carrossel_content_info >ps{
+    opacity: 1;
+
+}
+.carrossel_content > .home_slider_img{
+    width: 400px;
+}
+.main_all_body > .main_top > .mobile_main_top{
+  width: 100%;
+  height: 50px;
+  background-color: none;
+  color: white;
+  margin-top: -80px;
+  position: absolute;
+
+}
+.main_all_body > .main_top > .mobile_main_top{
+  visibility:hidden;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items:center;
+
+  
+}
+.main_all_body > .main_top > .mobile_main_top > .menu_burguer{
+  margin-left: 20px;
+  font-size: 30px;
+}
+.main_all_body > .main_top > .mobile_main_top > .mobile_main_logo{
+  margin-right: 20px;
+  font-size: 30px;
+  font-family: 'sw', Arial;
+}
+.main_all_body > .main_top > .mobile_main_top > .mobile_menu{
+  width: 130px;
+  height: 150px;
+  background-color: rgb(37, 37, 37);
+  z-index: 2000;
+  margin-top: 200px;
+  text-align: start;
+  position: absolute;
+
+  animation: in1 0.5s linear forwards;
+}
+.main_all_body > .main_top > .mobile_main_top > .mobile_menu > .menu_item{
+  margin: 5px 0px 0px 5px;
+}
+.main_all_body > .main_top > .mobile_main_top > .mobile_menu > .menu_item:hover{
+  color: yellow;
+}
+
+@keyframes in1{
+  from {margin-left: -130px}
+  to {margin-left: 0px}
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .carrossel_content > .carrossel_content_info{
+        position: absolute;
+        z-index: 100;
+    }
+}
+@media screen and (max-width: 550px) {
+    .main_all_body > .main_top > .main_item_menu{
+      /* display: flex; */
+      visibility: hidden;
+    }
+    .main_all_body > .main_top > .main_logo{
+      /* display: flex; */
+      visibility: hidden;
+    }
+    .main_all_body > .main_top > .mobile_main_top{
+      background-color: rgb(19, 18, 18);
+      visibility:visible;
+    }
+    .main_all_body > .main_content{
+      margin-top: -70px;
+    }
+    
+    
+    /* .main_all_body > .main_top > .main_item_menu{
+      margin-top: 130px;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100% ;
+      height:200px;
+      position:absolute;
+      background-color: black;
+      z-index: 200;
+      padding-bottom: 10px;
+    }
+    .main_all_body > .main_top > .main_item_menu > .menu_item{
+      text-align: start;
+      margin-left: 10px;
+    }
+    .main_all_body > .main_top > .main_item_menu > .menu_item:hover{
+      border: none;
+    } */
+}
+
+
