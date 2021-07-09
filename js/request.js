@@ -29,7 +29,7 @@ function herosResponse(status, content) {
 
         let result = JSON.parse(content);
         rl = result['results'];
-        mainHerosJSON.push(rl[0]);
+        if (mainHerosJSON.length < namesMainHeros.length) { mainHerosJSON.push(rl[0]); }
         if (mainHerosJSON.length == namesMainHeros.length) {
             renderMainHeros()
         }
@@ -47,28 +47,41 @@ function renderMainHeros() {
 
     let elBase = document.querySelectorAll('.carrossel_content_info')
     let imgHeros = document.querySelectorAll('.home_slider_img')
-
-    let infosHTML;
     
     for (let i = 0; i < mainHerosJSON.length; i++) {
         
         imgHeros[i].setAttribute('src', "./images/mainHeros/" + mainHerosJSON[i]['name'].toLowerCase().replace(' ', '_').replace('-', '') + ".png")
-        elBase[i].innerHTML = '<h8>INFORMAÇÕES</h8>' +
-            '<br><h8>' + mainHerosJSON[i]['name'] + '</h8>' +
-             "<p><span class='titles-infos'>" + 'Gênero: ' + '</span>' + mainHerosJSON[i]['gender'] + '</p>' +
-             "<p><span class='titles-infos'>" + 'Nascimento: ' + '</span>' + mainHerosJSON[i]['birth_year'] + '</p>' +
-             "<p id='info-planet'><span class='titles-infos'>" + 'Altura: ' + '</span>' + mainHerosJSON[i]['height'] + ' cm</p>' + 
-             "<p><span class='titles-infos'>" + 'Peso: ' + '</span>' + mainHerosJSON[i]['mass'] + ' kg</p>'
         
+        nameSplit = mainHerosJSON[i]['name'].split(' ')
+        nameSplitR = mainHerosJSON[i]['name'].split('-')
+
+        if (nameSplit.length > 1) {
+            elBase[i].innerHTML = '<h3>' + nameSplit[0] + '<span> ' + nameSplit[nameSplit.length - 1] + '</span>' + '</h3>'
+        } else if (nameSplitR.length > 1) {
+            elBase[i].innerHTML  = '<h3>' + nameSplitR[0] + '<span>' + nameSplitR[nameSplitR.length - 1] + '</span>' + '</h3>'
+        }else {
+            elBase[i].innerHTML  = '<h3><span>' + mainHerosJSON[i]['name'] + '</span></h3>'
+        }
+        
+        elBase[i].innerHTML += "<h9 class='title-infoHero'>INFORMAÇÕES</h9>" +
+             "<p><span class='titles-infos'>Gênero: </span>" + mainHerosJSON[i]['gender'] + '</p>' +
+             "<p><span class='titles-infos'>Nascimento: </span>" + mainHerosJSON[i]['birth_year'] + '</p>' +
+             "<p id='info-planet'><span class='titles-infos'>Altura: </span>" + mainHerosJSON[i]['height'] + ' cm</p>' + 
+             "<p><span class='titles-infos'>Peso: </span>" + mainHerosJSON[i]['mass'] + ' kg</p>'
+    }
+    
+    let titleInfoHeros = document.querySelectorAll('.title-infoHero')
+    for (let x = 0; x < titleInfoHeros.length; x++) {
+        titleInfoHeros[x].style.backgroundColor = colorsMainHeros[namesMainHeros.indexOf(mainHerosJSON[x]['name'])]
     }
 
-    // infosHTML += '<h8>INFORMAÇÕES</h8>' +
-    //     "<p><span class='titles-infos'>" + 'Gênero: ' + '</span>' + mainHerosJSON[num]['gender'] + '</p>' +
-    //     "<p><span class='titles-infos'>" + 'Nascimento: ' + '</span>' + mainHerosJSON[num]['birth_year'] + '</p>' +
-    //     "<p id='info-planet'><span class='titles-infos'>" + 'Altura: ' + '</span>' + mainHerosJSON[num]['height'] + ' cm</p>' + 
-    //     "<p><span class='titles-infos'>" + 'Peso: ' + '</span>' + mainHerosJSON[num]['mass'] + ' kg</p>'
-
-    // elBase.innerHTML = infosHTML;
+    let titleNameHero = document.querySelectorAll('h3>span')
+    for (let j = 0; j < titleNameHero.length; j++) {
+        if (mainHerosJSON[j]['name'].split(' ').length > 1 || mainHerosJSON[j]['name'].split('-').length > 1) {
+            titleNameHero[j].style.color = titleInfoHeros[j].style.backgroundColor
+        }
+        
+    }
 
 }
 

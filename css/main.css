@@ -61,12 +61,8 @@
     justify-content: center;
 }
 .carrossel_content .carrossel_content_info{
-    background-color: rgba(255, 255, 255, 0.637);
-    color: black;
+    color: white;
     width: 200px;
-    height: 250px;
-    border-top: 20px solid rgb(124, 124, 23);
-
 }
 .carrossel_content .carrossel_content_info >ps{
     opacity: 1;
@@ -119,6 +115,36 @@
 .main_all_body > .main_top > .mobile_main_top > .mobile_menu > .menu_item:hover{
   color: yellow;
 }
+
+
+/*------------------------------------------------- CAROUSEL INFOS HEROS -------------------------------------------------*/
+.carrossel_content_info > h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.carrossel_content_info > h9 {
+  font-size: 16px;
+  padding: 5px 8px;
+  font-weight: 600;
+}
+
+.carrossel_content_info > p {
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.carrossel_content_info > p > span{
+  font-weight: 500;
+}
+
+.carrossel_content_info > p:nth-child(n+1) {
+  margin-top: 10px;
+}
+
+
+
 
 @keyframes in1{
   from {margin-left: -130px}
