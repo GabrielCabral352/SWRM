@@ -15,7 +15,11 @@ function load(element) {
         return html
     })
     .then((html) => {
+        
         div_mainContent.innerHTML = html
+        
+        if (attr == 'home') { loadMainHeros() }
+    
     }).catch(function(error) {
         window.location.href = "./html/404.html"
     });
