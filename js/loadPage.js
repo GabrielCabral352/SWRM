@@ -25,7 +25,11 @@ function load(element) {
             case 'personagens':
                 renderHeroes();
                 break;
-            
+
+            case 'filmes':
+                renderFilms();
+                break;
+
             default:
                 break;
         }
@@ -33,5 +37,7 @@ function load(element) {
     }).catch(function(error) {
         window.location.href = "./html/404.html"
     });
-        //Failed to fetch at load
+    
+    //Failed to fetch at load
+    
 }

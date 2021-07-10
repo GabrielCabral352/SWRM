@@ -39,9 +39,9 @@ function renderHeroes() {
         infoHero[i].innerHTML = '<p>Nome: ' + herosJSON[i]['name'] + '</p>' +
                                 '<p>Gênero: ' + herosJSON[i]['gender'] + '</p>' +
                                 '<p>Nascimento: ' + herosJSON[i]['birth_year'] + '</p>' +
-                                '<p>Altura: ' + herosJSON[i]['height'] + 'cm</p>' +
-                                '<p>Peso: ' + herosJSON[i]['mass'] + 'kg</p>'
-        portraitHero[i].setAttribute('src', '../images/portraitHeros/' + herosJSON[i]['name'].toLowerCase().replaceAll(' ', '_').replace('-', '') + '.jpg')
+                                '<p>Altura: ' + herosJSON[i]['height'] + ' cm</p>' +
+                                '<p>Peso: ' + herosJSON[i]['mass'] + ' kg</p>'
+        portraitHero[i].setAttribute('src', '../images/portraitHeros/' + herosJSON[i]['name'].toLowerCase().replaceAll(' ', '_').replaceAll('-', '') + '.jpg')
         
     }
 

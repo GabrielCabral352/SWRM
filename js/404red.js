@@ -1,4 +1,4 @@
-function loads(){
+function loadError(){
     fetch('../main.html')
     .then((response) => {
         if(response.status === 200){
