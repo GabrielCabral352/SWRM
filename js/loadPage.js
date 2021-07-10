@@ -19,7 +19,11 @@ function load(element) {
         
         switch (attr) {
             case 'home':
-                loadMainHeros();
+                if (mainHerosJSON.length == namesMainHeros.length) {
+                    renderMainHeros()
+                } else {
+                    loadMainHeros();
+                }
                 break;
         
             case 'personagens':
@@ -28,6 +32,10 @@ function load(element) {
 
             case 'filmes':
                 renderFilms();
+                break;
+
+            case 'planetas':
+                renderPlanets();
                 break;
 
             default:
