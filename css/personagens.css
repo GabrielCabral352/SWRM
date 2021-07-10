@@ -5,7 +5,6 @@
 .carrossel_content > .heros_content > .portrait_heros_info{
     position:absolute;
     margin-top: 35px;
-    margin-left: 35px;
     z-index: 200;
     width: 26.7%;
     height: 83%;
@@ -68,7 +67,7 @@
 
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 800px) {
     .carrossel_content{
         display: flex;
         flex-direction: column;
@@ -80,5 +79,9 @@
         animation: opacity 0.5s ease-in-out;
         
         
+    }
+    .disRow{
+        display: flex;
+        flex-direction: row;
     }
 }
