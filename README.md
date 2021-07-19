@@ -4,7 +4,7 @@
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
 
-<img src="------" alt="Home">
+<img src="imagens/logo.png" alt="Home">
 
 > Projeto colaborativo, trata-se de um site simples com requisições da API SWAPI (Star-Wars)
 
