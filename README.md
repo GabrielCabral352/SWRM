@@ -29,6 +29,9 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 Para instalar o projeto_hotel, siga estas etapas:
 
+* 1° para acessar localmente é necesario importar o banco, o mesmo esta na pasta API SWRM
+* 2° Rode a API em Python, a mesma esta na mesma pasta do banco, API SWRM
+
 Linux e macOS:
 ```
 flask
