@@ -81,6 +81,14 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
     <td align="center">
+      <a href="https://github.com/Marcos-VNC">
+        <img src="https://avatars.githubusercontent.com/u/75021765?v=4" width="100px;" alt=""/><br>
+        <sub>
+          <b>Marcos Vinicius(Marcos-VNC)</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
       <a href="https://github.com/tobiassdb1">
         <img src="https://avatars.githubusercontent.com/u/86832505?v=4" width="100px;" alt=""/><br>
         <sub>
