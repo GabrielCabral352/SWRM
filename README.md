@@ -104,6 +104,38 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
         </sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/ElielPimenta">
+        <img src="https://avatars.githubusercontent.com/u/86831916?v=4" width="100px;" alt=""/><br>
+        <sub>
+          <b>Eliel pimenta(ElielPimenta)</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/LariSVS">
+        <img src="https://avatars.githubusercontent.com/u/86832441?v=4" width="100px;" alt=""/><br>
+        <sub>
+          <b>Larissa(LariSVS)</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="--->
+        <img src="---" width="100px;" alt=""/><br>
+        <sub>
+          <b>LUIS FDS(luixfds)</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/sxtnxd">
+        <img src="https://avatars.githubusercontent.com/u/86832399?v=4" width="100px;" alt=""/><br>
+        <sub>
+          <b>Sxtnxd(sxtnxd)</b>
+        </sub>
+      </a>
+    </td>
   </tr>
 </table>
 
