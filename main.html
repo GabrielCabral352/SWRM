@@ -4,14 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StarWars - Roberto Mange</title>
+    <title id="title">StarWars - Roberto Mange</title>
     <link rel="stylesheet" href="./css/imports.css">
     <link href="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="./images/icone.png">
 </head>
-<body class="main_all_body" onload="load(document.querySelector('a[view=home]'));">
+<body class="main_all_body" onload="load(document.querySelector('a[view=home]'));" >
 
-    <div class="main_top">
+    <!-- EXTRAS -->
+    <audio id="music" src="audios/star-wars-cantina-song.mp3"></audio>
+    <audio id="saber" src="audios/light-saber-on.wav"></audio>
+
+    <!-- Personagens Principais --> 
+    <audio id="luke" src="audios/luke.wav"></audio>
+    <audio id="c3po" src="audios/c3po.wav"></audio>
+    <audio id="r2d2" src="audios/R2D2-yeah.wav"></audio>
+    <audio id="father" src="audios/vader.wav"></audio>
+    <audio id="yoda" src="audios/yodalaughing.mp3"></audio>
+
+    <!-- Personagens -->
+    <audio id="dooku" src="audios/dooku.wav"></audio>
+    <audio id="leia" src="audios/leia.wav"></audio>
+    <audio id="darthmaul" src="audios/darthmaul.wav"></audio>
+    <audio id="anakin" src="audios/anakin.wav"></audio>
+    <audio id="hansolo" src="audios/hansolo.mp3"></audio>
+    <audio id="jabba" src="audios/jabba-the-hutt-laughing.wav"></audio>
+    <audio id="roaar" src="audios/chewy_roar.wav"></audio>
+
+    <!-- Filmes -->
+    <audio id="filme1" src="/audios/filme1.mp3"></audio>
+    <audio id="filme2" src="/audios/filme2.mp3"></audio>
+    <audio id="filme3" src="audios/filme3.mp3"></audio>
+
+    <!-- Planetas -->
+    <audio id="tatooine" src="/audios/Tatooine.mp3"></audio>
+    <audio id="alderaan" src="/audios/Alderaan.mp3"></audio>
+    <audio id="yavin_iv" src="audios/Yavin IV.mp3"></audio>
+
+    <div class="main_top" onload="ocultarExibir()">
 
         <div class="main_logo">
             <h1>Star Wars</h1>
@@ -29,11 +59,15 @@
             <div class="menu_item" onclick="load(this)" view="filmes">
                 <a>FILMES</a>
             </div>
-            <div class="menu_item" onclick="load(this)" view="planetas">
+            <div class="menu_item" id="planets" onclick="load(this)" view="planetas">
                 <a>PLANETAS</a>
             </div>
             <div class="menu_item" onclick="load(this)" view="creditos">
                 <a>CRÉDITOS</a>
+            </div>
+
+            <div class="menu_item" view="login">
+                <a href="login.html">LOGIN</a>
             </div>
 
         </div>
@@ -64,6 +98,9 @@
                 <div class="menu_item">
                     <a onclick="load(this)" view="creditos">CRÉDITOS</a>
                 </div>
+                <div class="menu_item" view="login">
+                    <a href="login.html">LOGIN</a>
+                </div>
             </div>
         </div>
     </div>
@@ -81,4 +118,6 @@
 <script src="./js/requisitions/persoRequest.js"></script>
 <script src="./js/requisitions/filmsRequest.js"></script>
 <script src="./js/requisitions/planetsRequest.js"></script>
+<script src="./js/wavs.js"></script>
+<script src="./js/requisitions/registerAndLogin.js"></script>
 </html>

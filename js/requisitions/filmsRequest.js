@@ -29,7 +29,7 @@ function renderFilms() {
         '<p>Lançamento: ' + filmsJSON[0][i]['release_date'].split('-').reverse().join('/') + '</p>'
 
         portraitHero[i].setAttribute('src', '../images/films/' + filmsJSON[0][i]['title'].toLowerCase().replaceAll(' ', '_') + '.jpeg')
-        
+        // portraitHero[i].setAttribute('onMouseUp', ""+filmsJSON[0][i]['title'].toLowerCase().replaceAll(' ', '_').replaceAll('-', '')+"()")
     }
 
 }

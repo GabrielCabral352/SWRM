@@ -42,7 +42,7 @@ function renderHeroes() {
                                 '<p>Altura: ' + herosJSON[i]['height'] + ' cm</p>' +
                                 '<p>Peso: ' + herosJSON[i]['mass'] + ' kg</p>'
         portraitHero[i].setAttribute('src', '../images/portraitHeros/' + herosJSON[i]['name'].toLowerCase().replaceAll(' ', '_').replaceAll('-', '') + '.jpg')
-        
+        portraitHero[i].setAttribute('onMouseUp', ""+herosJSON[i]['name'].toLowerCase().replaceAll(' ', '_').replaceAll('-', '')+"()")
     }
 
 }

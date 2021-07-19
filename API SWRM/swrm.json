@@ -1,0 +1,11 @@
+[
+{"type":"header","version":"5.1.0","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"swrm"},
+{"type":"table","name":"usuario","database":"swrm","data":
+[
+{"id":"1","nome":"Marcos Vinicius","cpf":"123.456.789","nasc":"25\/03\/2002","sexo":"Masculino","email":"marcos@gmail.com","senha":"admin123"},
+{"id":"3","nome":"Vitor Dias","cpf":"951.753.258","nasc":"01\/01\/2002","sexo":"Masculino","email":"vitor@gmail.com","senha":"admin321"},
+{"id":"4","nome":"marcos VSCode","cpf":"123.456.789","nasc":"25\/03\/2002","sexo":"Masculino","email":"marcos@gmail.com","senha":"admin123"}
+]
+}
+]
