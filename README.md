@@ -12,17 +12,17 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [x] ------
-- [x] ------
-- [ ] ------
-- [ ] ------
+- [x] Login
+- [x] User Admin
+- [ ] Atualizar audios para todos os Planetas e Filmes
+- [ ] Alterar Cursor
 
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
-* Você instalou a versão mais recente de `<----->`
-* Você tem uma máquina `<Windows / Linux / Mac>`. Indique qual sistema operacional é compatível / não compatível.
+* Você instalou a versão mais recente de `<Python3>`
+* Você tem uma máquina `<Windows / Linux / Mac>`.
 * Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
 
 ## 🚀 Instalando <Projeto hotel>
@@ -31,19 +31,31 @@ Para instalar o projeto_hotel, siga estas etapas:
 
 Linux e macOS:
 ```
-----
+flask
+flask_sqlalchemy
+mysql-connector-python
+mysqlclient
 ```
 <comando_de_instalação>
 ```
-----
+sudo pip install flask
+sudo pip install flask_sqlalchemy
+sudo pip install mysql-connector-python
+sudo pip install mysqlclient
 ```
 Windows:
 ```
-----
+flask
+flask_sqlalchemy
+mysql-connector-python
+mysqlclient
 ```
 <comando_de_instalação>
 ```
-----
+pip install flask
+pip install flask_sqlalchemy
+pip install mysql-connector-python
+pip install mysqlclient
 ```
 
 ## 📫 Contribuindo para Projeto Hotel
