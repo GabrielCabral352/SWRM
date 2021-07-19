@@ -113,8 +113,8 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
     <td align="center">
-      <a href="--->
-        <img src="---" width="100px;" alt=""/><br>
+      <a href="https://github.com/luixfds">
+        <img src="https://avatars.githubusercontent.com/u/73261937?v=4" width="100px;" alt=""/><br>
         <sub>
           <b>LUIS FDS(luixfds)</b>
         </sub>
