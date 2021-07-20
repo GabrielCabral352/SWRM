@@ -29,7 +29,7 @@ function renderPlanets() {
         '<p>População: ' + planetsJSON[0][i]['population'] + '</p>'
 
         portraitHero[i].setAttribute('src', '../images/planetas/' + planetsJSON[0][i]['name'].toLowerCase().replaceAll(' ', '_') + '.jpeg')
-        
+        portraitHero[i].setAttribute('onMouseUp', ""+planetsJSON[0][i]['name'].toLowerCase().replaceAll(' ', '_').replaceAll('-', '')+"()")
     }
 }
 

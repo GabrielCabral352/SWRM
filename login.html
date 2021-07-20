@@ -17,9 +17,15 @@
                 <h3>Roberto Mange</h3>
            </div>
         </div>
+        
+        <a href="logon.html">
+        <button>CADASTRAR</button>
+        </a>
+        
     </header>
     <main class="login_main_form">
-        <form action="#">
+        <script src="js/requisitions/registerAndLogin.js"></script>
+        <form onsubmit="login()">
             <div class="email_info">
                 <label class="email_label" for="email">Email:</label>
                 <input id="email" class="input_sw main_email" type="email">
@@ -31,8 +37,12 @@
             <button type="submit">
                 <p>Enviar</p>
             </button>
+            
             <img class="stormtrooper_img" src="./images/stormtrooper.png" alt="">
+            
         </form>
+        
     </main>
 </body>
+<script src="js/requisitions/registerAndLogin.js"></script>
 </html>

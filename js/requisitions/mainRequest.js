@@ -51,6 +51,7 @@ function renderMainHeros() {
     for (let i = 0; i < mainHerosJSON.length; i++) {
         
         imgHeros[i].setAttribute('src', "./images/mainHeros/" + mainHerosJSON[i]['name'].toLowerCase().replace(' ', '_').replace('-', '') + ".png")
+        imgHeros[i].setAttribute('onClick', ""+mainHerosJSON[i]['name'].toLowerCase().replace(' ', '_').replace('-', '')+"()")
         
         nameSplit = mainHerosJSON[i]['name'].split(' ')
         nameSplitR = mainHerosJSON[i]['name'].split('-')
